@@ -1,0 +1,23 @@
+{
+  "name": "reset-reaper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Redeem expiring Codex banked resets from an always-on VPS.",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stebulous/reset-reaper.git"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node watch.mjs",
+    "check": "node watch.mjs --once",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@openai/codex": "0.160.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
