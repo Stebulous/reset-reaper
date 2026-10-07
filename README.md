@@ -1,5 +1,10 @@
 # Reset Reaper
 
+**Early prototype:** This initial version is a "quick and dirty" project made
+with Codex, not a finished release. Tests and live account checks pass, but it
+still needs to redeem an expiring reset for real on the author's VPS to prove
+that it works as expected. Further improvements may be needed before release.
+
 Runs independently on an always-on Linux VPS. Every minute it reads the account's
 banked full resets and redeems the earliest-expiring eligible one when it has
 **30 minutes or less left**. This lead time is configurable. Checks and scheduling
